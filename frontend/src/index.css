@@ -1,0 +1,62 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #0f0f0f;
+  background: #e4e4e4;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  gap: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 32px;
+}
+
+.nav-item {
+  padding: 8px;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.8em;
+
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px;
+  margin-top: 32px;
+  border: 2px solid black;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
