@@ -12,6 +12,14 @@ const selectAllQuery = "SELECT * FROM ??";
 app.use(cors({ credentials: true, origin: "*" }));
 app.use(express.json());
 
+app.post("/testdelete", async (req, res) => {
+  await db.query("CALL sp_DeleteCustomer();");
+});
+
+app.post("/reset", async (req, res) => {
+  await db.query("CALL sp_ResetDb();");
+});
+
 app.get("/customers", async (req, res) => {
   try {
     const [rows] = await db.query(selectAllQuery, ["Customers"]);

@@ -16,6 +16,12 @@ const CustomersPage = () => {
     setRows(rows);
   };
 
+  const testDelete = async () => {
+    await fetch(import.meta.env.VITE_BACKEND_URL + "/testdelete", {
+      method: "POST",
+    });
+  };
+
   useEffect(() => {
     getData();
   }, []);
@@ -23,6 +29,7 @@ const CustomersPage = () => {
   return (
     <div>
       <h1>Customers</h1>
+      <button onClick={testDelete}>TEST DELETE</button>
       <Table
         rows={rows}
         showUpdateForm={showUpdateForm}
