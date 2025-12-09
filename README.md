@@ -25,15 +25,24 @@ Citations:
 
 - All code is adapted from code from CS340 explorations and assignments
 - Referenced for building backend routes (backend/routes/)
+
   URL: https://www.youtube.com/watch?v=l8WPWK9mS5M
+
   URL: https://www.geeksforgeeks.org/node-js/rest-api-using-the-express-to-perform-crud-create-read-update-delete/
+
 - db-connector.js is based on db-connector.js code from
+
   URL: https://canvas.oregonstate.edu/courses/2017561/assignments/10111722?
+
 - Referenced and adapted the following from CS340 explorations and assignments for PL/SQL and SQL code
   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-pl-slash-sql-part-1-sp-view-and-function?module_item_id=25645140
+
   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-pl-slash-sql-part-2-stored-procedures-for-cud?module_item_id=25645141
+
   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-database-application-design?
+
   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-implementing-cud-operations-in-your-app?module_item_id=25645149
+
 - Used the ideas suggested by ChatGPT for designing React pages/components
   AI Prompt "I'm building a crud web app using React. Each page displays data from
   a database table and allows users to update, create, and delete the data in the
