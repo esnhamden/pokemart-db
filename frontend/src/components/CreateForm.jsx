@@ -11,8 +11,7 @@ Citations:
   database from the frontened. Explain how to make React components (forms, HTML tables) 
   that can handle update create and delete operations without making separate 
   componentes for each database table?"
-    AI Response: Provided a basic example of using a schema for forms/tables
-
+  AI Response: Provided a basic example of using a schema for forms/tables
   URL: chatgpt.com
 */
 

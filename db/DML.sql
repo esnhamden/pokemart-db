@@ -3,7 +3,9 @@
 
 -- Citations:
 -- - Based on bsg_sample_data_manipulation_queries.sql provided in Project Step 3 Draft assignment
---   URL: https://canvas.oregonstate.edu/courses/2017561/assignments/10111739?module_item_id=25645135
+--   URL: https://canvas.oregonstate.edu/courses/2017561/assignments/10111739?
+-- - Referenced code from CS340 Exploration Database Application Design
+--   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-database-application-design?
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS sp_insert_mock_data;
