@@ -49,7 +49,7 @@ const discountCodesSchema = [
 const DiscountCodes = () => {
   const [rows, setRows] = useState([]);
 
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/discountcodes`;
+  const endpoint = `http://classwork.engr.oregonstate.edu:62812/discountcodes`;
 
   const getData = async () => {
     try {

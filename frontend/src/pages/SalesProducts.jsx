@@ -50,7 +50,7 @@ const salesProductsSchema = [
 const SalesProducts = () => {
   const [rows, setRows] = useState([]);
 
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/salesproducts`;
+  const endpoint = `http://classwork.engr.oregonstate.edu:62812/salesproducts`;
 
   const getData = async () => {
     try {

@@ -72,7 +72,7 @@ const salesSchema = [
 const Sales = () => {
   const [rows, setRows] = useState([]);
 
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/sales`;
+  const endpoint = `http://classwork.engr.oregonstate.edu:62812/sales`;
 
   const getData = async () => {
     try {
