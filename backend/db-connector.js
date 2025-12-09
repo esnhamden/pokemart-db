@@ -1,3 +1,12 @@
+/*
+Alexander Birrell and Eason Hamden
+12/8/2025
+
+Citations:
+- Based on React/NodeJS code from CS340 Activity 2 Connect webapp to database
+  URL: https://canvas.oregonstate.edu/courses/2017561/assignments/10111722?
+*/
+
 const dotenv = require("dotenv").config();
 const mysql = require("mysql2");
 

@@ -1,3 +1,14 @@
+-- Alexander Birrell and Eason Hamden
+-- 12/8/2025
+
+-- Citations:
+-- - Based on PLSQL code from CS340 Exploration Pl/SQL Part 1 (views)
+--   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-pl-slash-sql-part-1-sp-view-and-function?module_item_id=25645140
+
+-- - Based on PLSQL code from CS340 Exploration Pl/SQL Part 2 (stored procedures)
+--   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-pl-slash-sql-part-2-stored-procedures-for-cud?module_item_id=25645141
+
+
 -- ----------------------------------------------------------------------------
 -- Customers
 -- ----------------------------------------------------------------------------

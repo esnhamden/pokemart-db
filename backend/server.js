@@ -1,3 +1,15 @@
+/*
+Alexander Birrell and Eason Hamden
+12/8/2025
+
+Citations:
+- Based on React/NodeJS code from CS340 Activity 2 Connect webapp to database
+  URL: https://canvas.oregonstate.edu/courses/2017561/assignments/10111722?
+  
+- Referenced the tutorial Build a REST API with Node JS and Express | CRUD API Tutorial 
+  URL: https://www.youtube.com/watch?v=l8WPWK9mS5M
+*/
+
 const dotenv = require("dotenv").config();
 const express = require("express");
 const cors = require("cors");

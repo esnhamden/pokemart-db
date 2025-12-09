@@ -1,3 +1,17 @@
+/*
+Alexander Birrell and Eason Hamden
+12/8/2025
+
+Citations:
+- AI Prompt: "I'm building a crud web app using React. Each page displays data from
+  a database table and allows users to update, create, and delete the data in the 
+  database from the frontened. Explain how to make React components (forms, HTML tables) 
+  that can handle update create and delete operations without making separate 
+  componentes for each database table?"
+  AI Response: Provided a basic example of using a schema for forms/tables
+  URL: chatgpt.com
+*/
+
 import DeleteButton from "./DeleteButton";
 
 const Table = ({ schema, rows, endpoint, getData }) => {

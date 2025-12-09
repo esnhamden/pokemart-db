@@ -1,3 +1,10 @@
+-- Alexander Birrell and Eason Hamden
+-- 12/8/2025
+
+-- Citations:
+-- - Based on PLSQL code from CS340 Exploration Pl/SQL Part 2
+--   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-pl-slash-sql-part-2-stored-procedures-for-cud?module_item_id=25645141
+
 DELIMITER //
 DROP PROCEDURE IF EXISTS sp_reset_db;
 CREATE PROCEDURE sp_reset_db()

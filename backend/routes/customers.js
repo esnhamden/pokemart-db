@@ -1,3 +1,15 @@
+/*
+Alexander Birrell and Eason Hamden
+12/8/2025
+
+Citations:
+- Based on React/NodeJS code from CS340 Exploration Implementing CUD operations in your app
+  URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-implementing-cud-operations-in-your-app?
+
+- Referenced the tutorial Build a REST API with Node JS and Express | CRUD API Tutorial 
+  URL: https://www.youtube.com/watch?v=l8WPWK9mS5M
+*/
+
 const express = require("express");
 const router = express.Router();
 const db = require("../db-connector");

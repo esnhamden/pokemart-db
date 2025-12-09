@@ -1,3 +1,15 @@
+/*
+Alexander Birrell and Eason Hamden
+12/8/2025
+
+Citations:
+- Based on React/NodeJS code from CS340 Exploration Implementing CUD operations in your app
+  URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-implementing-cud-operations-in-your-app?
+
+- Referenced the tutorial Build a REST API with Node JS and Express | CRUD API Tutorial 
+  URL: https://www.youtube.com/watch?v=l8WPWK9mS5M
+*/
+
 const express = require("express");
 const router = express.Router();
 const db = require("../db-connector");
@@ -34,7 +46,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Update sale product information
+// Update store product information
 router.put("/", async (req, res) => {
   try {
     const data = req.body;
@@ -54,23 +66,23 @@ router.put("/", async (req, res) => {
       );
   } catch (error) {
     console.log(error);
-    res.status(500).send(`Error: Cannot update sale product.`);
+    res.status(500).send(`Error: Cannot update store product.`);
   }
 });
 
-// Delete sale product
+// Delete store product
 router.delete("/", async (req, res) => {
   try {
-    const query = `CALL sp_delete_sale_product(?);`;
-    await db.query(query, [req.body.sale_product_id]);
+    const query = `CALL sp_delete_store_product(?);`;
+    await db.query(query, [req.body.store_product_id]);
     res
       .status(204)
       .send(
-        `Success: Sale product with ID ${req.body.sale_product_id} deleted.`
+        `Success: Store product with ID ${req.body.store_product_id} deleted.`
       );
   } catch (error) {
     console.log(error);
-    res.status(500).send(`Error: Cannot delete sale product.`);
+    res.status(500).send(`Error: Cannot delete store product.`);
   }
 });
 

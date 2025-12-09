@@ -1,3 +1,12 @@
+/*
+Alexander Birrell and Eason Hamden
+12/8/2025
+
+Citations:
+- Based on React/NodeJS code from CS340 Exploration Implementing CUD operations in your app
+  URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-implementing-cud-operations-in-your-app?
+*/
+
 import { Trash } from "lucide-react";
 
 const DeleteButton = ({ id_name, id, endpoint, getData }) => {
