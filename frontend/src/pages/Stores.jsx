@@ -62,7 +62,12 @@ const Stores = () => {
   return (
     <div>
       <h1>Stores</h1>
-      <Table schema={storesSchema} rows={rows} />
+      <Table
+        schema={storesSchema}
+        rows={rows}
+        endpoint={endpoint}
+        getData={getData}
+      />
       <h2>Add a new store</h2>
       <CreateForm
         schema={storesSchema.slice(1)}

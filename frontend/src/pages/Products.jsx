@@ -47,7 +47,12 @@ const Products = () => {
   return (
     <div>
       <h1>Products</h1>
-      <Table schema={productsSchema} rows={rows} />
+      <Table
+        schema={productsSchema}
+        rows={rows}
+        endpoint={endpoint}
+        getData={getData}
+      />
       <h2>Add a new product</h2>
       <CreateForm
         schema={productsSchema.slice(1)}

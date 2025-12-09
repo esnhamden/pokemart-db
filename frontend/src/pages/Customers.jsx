@@ -60,7 +60,12 @@ const Customers = () => {
   return (
     <div>
       <h1>Customers</h1>
-      <Table schema={customersSchema} rows={rows} />
+      <Table
+        schema={customersSchema}
+        rows={rows}
+        endpoint={endpoint}
+        getData={getData}
+      />
       <h2>Add a new customer</h2>
       <CreateForm
         schema={customersSchema.slice(1)}

@@ -64,7 +64,12 @@ const DiscountCodes = () => {
   return (
     <div>
       <h1>Discount Codes</h1>
-      <Table schema={discountCodesSchema} rows={rows} />
+      <Table
+        schema={discountCodesSchema}
+        rows={rows}
+        endpoint={endpoint}
+        getData={getData}
+      />
       <h2>Add a new discount code</h2>
       <CreateForm
         schema={discountCodesSchema.slice(1)}
