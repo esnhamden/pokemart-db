@@ -44,10 +44,13 @@ Citations:
   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-implementing-cud-operations-in-your-app?module_item_id=25645149
 
 - Used the ideas suggested by ChatGPT for designing React pages/components
+
   AI Prompt "I'm building a crud web app using React. Each page displays data from
   a database table and allows users to update, create, and delete the data in the
   database from the frontened. Explain how to make React components (forms, HTML tables)
   that can handle update create and delete operations without making separate
   componentes for each database table?"
+
   AI Response: Provided a basic example of using a schema for forms/tables
+
   URL: chatgpt.com
