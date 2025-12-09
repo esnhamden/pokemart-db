@@ -11,7 +11,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const port = import.meta.env.VITE_FRONTEND_PORT || 3000;
+const port = 62813;
 app.use(express.static(path.join(__dirname, "dist")));
 
 app.get("*", (req, res) => {
