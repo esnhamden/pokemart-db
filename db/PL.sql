@@ -8,6 +8,8 @@
 -- - Based on PLSQL code from CS340 Exploration Pl/SQL Part 2 (stored procedures)
 --   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-pl-slash-sql-part-2-stored-procedures-for-cud?module_item_id=25645141
 
+-- - Based on PLSQL code from CS340 Implementing CUD operations in your app
+--   URL: https://canvas.oregonstate.edu/courses/2017561/pages/exploration-implementing-cud-operations-in-your-app?module_item_id=25645149
 
 -- ----------------------------------------------------------------------------
 -- Customers

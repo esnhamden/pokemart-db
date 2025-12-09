@@ -20,12 +20,12 @@ const Home = () => {
   return (
     <div>
       <h2>Welcome to PokeMartDB!</h2>
-      <h3>
+      <p>
         PokeMart is a small retailer that operates only in the United States
         with 32 employees and 7 stores. Various products from the Pokemon
         franchise, such as cards, video games, and toys, are sold at PokeMart
         locations.
-      </h3>
+      </p>
       <button onClick={handleClick}>Click here to reset the database</button>
     </div>
   );

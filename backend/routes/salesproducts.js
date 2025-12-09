@@ -8,6 +8,9 @@ Citations:
 
 - Referenced the tutorial Build a REST API with Node JS and Express | CRUD API Tutorial 
   URL: https://www.youtube.com/watch?v=l8WPWK9mS5M
+
+- Referenced the following 
+  URL: https://www.geeksforgeeks.org/node-js/rest-api-using-the-express-to-perform-crud-create-read-update-delete/
 */
 
 const express = require("express");
