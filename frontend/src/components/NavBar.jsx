@@ -5,20 +5,20 @@ const navItems = [
   { title: "Customers", link: "/customers" },
   { title: "Products", link: "/products" },
   { title: "Stores", link: "/stores" },
-  { title: "DiscountCodes", link: "/DiscountCodes" },
+  { title: "Discount Codes", link: "/DiscountCodes" },
   { title: "Sales", link: "/sales" },
-  { title: "SalesProducts", link: "/salesproducts" },
-  { title: "StoresProducts", link: "/storesproducts" },
+  { title: "Sales Products", link: "/salesproducts" },
+  { title: "Stores Products", link: "/storesproducts" },
 ];
 
 const NavBar = () => {
   return (
     <div>
-      <nav>
+      <nav className="navbar">
         <div>
-          <p>PokeMartDB</p>
+          <p className="logo">PokeMartDB</p>
         </div>
-        <div>
+        <div className="navbar-links">
           {navItems.map((item, index) => (
             <NavLink key={index} to={item.link}>
               {item.title}

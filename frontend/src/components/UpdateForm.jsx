@@ -33,7 +33,7 @@ const UpdateForm = ({ schema, initialData, rows, getData, endpoint }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="input">
       {schema.map((field) => (
         <div key={field.name}>
           <label>{field.label}</label>
