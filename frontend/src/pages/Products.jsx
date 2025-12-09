@@ -3,35 +3,22 @@ import Table from "../components/Table";
 import CreateForm from "../components/CreateForm";
 import UpdateForm from "../components/UpdateForm";
 
-const customersSchema = [
+const productsSchema = [
   {
-    label: "Customer ID",
-    name: "customer_id",
-    id: "customer_id",
+    label: "Product ID",
+    name: "product_id",
+    id: "product_id",
     type: "select_id",
     options: [],
   },
-  { label: "First Name", name: "first_name", id: "first_name", type: "text" },
-  { label: "Last Name", name: "last_name", id: "last_name", type: "text" },
-  { label: "Email", name: "email", id: "email", type: "text" },
-  {
-    label: "Phone Number",
-    name: "phone_number",
-    id: "phone_number",
-    type: "text",
-  },
-  {
-    label: "Registration Date",
-    name: "registration_date",
-    id: "registration_date",
-    type: "date",
-  },
+  { label: "Product Name", name: "name", id: "name", type: "text" },
+  { label: "Price", name: "price", id: "price", type: "text" },
 ];
 
-const Customers = () => {
+const Products = () => {
   const [rows, setRows] = useState([]);
 
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/customers`;
+  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/products`;
 
   const getData = async () => {
     try {
@@ -39,7 +26,7 @@ const Customers = () => {
       const rows = await response.json();
       setRows(rows);
       // Add options for dropdown
-      customersSchema.forEach((field) => {
+      productsSchema.forEach((field) => {
         if (field.type === "select" || field.type === "select_id") {
           for (const row of rows) {
             if (!field.options.includes(row[field.name])) {
@@ -59,11 +46,11 @@ const Customers = () => {
 
   return (
     <div>
-      <h1>Customers</h1>
-      <Table schema={customersSchema} rows={rows} />
-      <h2>Add a new customer</h2>
+      <h1>Products</h1>
+      <Table schema={productsSchema} rows={rows} />
+      <h2>Add a new product</h2>
       <CreateForm
-        schema={customersSchema.slice(1)}
+        schema={productsSchema.slice(1)}
         initialData={{
           first_name: "",
           last_name: "",
@@ -74,9 +61,9 @@ const Customers = () => {
         getData={getData}
         endpoint={endpoint}
       />
-      <h2>Update customer information</h2>
+      <h2>Update product information</h2>
       <UpdateForm
-        schema={customersSchema}
+        schema={productsSchema}
         initialData={{
           customer_id: "",
           first_name: "",
@@ -92,4 +79,4 @@ const Customers = () => {
     </div>
   );
 };
-export default Customers;
+export default Products;

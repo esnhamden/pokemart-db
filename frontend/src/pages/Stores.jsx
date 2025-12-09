@@ -3,17 +3,19 @@ import Table from "../components/Table";
 import CreateForm from "../components/CreateForm";
 import UpdateForm from "../components/UpdateForm";
 
-const customersSchema = [
+const storesSchema = [
   {
-    label: "Customer ID",
-    name: "customer_id",
-    id: "customer_id",
+    label: "Store ID",
+    name: "store_id",
+    id: "store_id",
     type: "select_id",
     options: [],
   },
-  { label: "First Name", name: "first_name", id: "first_name", type: "text" },
-  { label: "Last Name", name: "last_name", id: "last_name", type: "text" },
-  { label: "Email", name: "email", id: "email", type: "text" },
+  { label: "Store Name", name: "name", id: "name", type: "text" },
+  { label: "Street", name: "street", id: "street", type: "text" },
+  { label: "City", name: "city", id: "city", type: "text" },
+  { label: "State", name: "state", id: "state", type: "text" },
+  { label: "Zip Code", name: "zip_code", id: "zip_code", type: "text" },
   {
     label: "Phone Number",
     name: "phone_number",
@@ -21,17 +23,17 @@ const customersSchema = [
     type: "text",
   },
   {
-    label: "Registration Date",
-    name: "registration_date",
-    id: "registration_date",
-    type: "date",
+    label: "Employee Count",
+    name: "employee_count",
+    id: "employee_count",
+    type: "text",
   },
 ];
 
-const Customers = () => {
+const Stores = () => {
   const [rows, setRows] = useState([]);
 
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/customers`;
+  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/stores`;
 
   const getData = async () => {
     try {
@@ -39,7 +41,7 @@ const Customers = () => {
       const rows = await response.json();
       setRows(rows);
       // Add options for dropdown
-      customersSchema.forEach((field) => {
+      storesSchema.forEach((field) => {
         if (field.type === "select" || field.type === "select_id") {
           for (const row of rows) {
             if (!field.options.includes(row[field.name])) {
@@ -59,31 +61,35 @@ const Customers = () => {
 
   return (
     <div>
-      <h1>Customers</h1>
-      <Table schema={customersSchema} rows={rows} />
-      <h2>Add a new customer</h2>
+      <h1>Stores</h1>
+      <Table schema={storesSchema} rows={rows} />
+      <h2>Add a new store</h2>
       <CreateForm
-        schema={customersSchema.slice(1)}
+        schema={storesSchema.slice(1)}
         initialData={{
-          first_name: "",
-          last_name: "",
-          email: "",
+          name: "",
+          street: "",
+          city: "",
+          state: "",
+          zip_code: "",
           phone_number: "",
-          registration_date: "",
+          employee_count: "",
         }}
         getData={getData}
         endpoint={endpoint}
       />
-      <h2>Update customer information</h2>
+      <h2>Update store information</h2>
       <UpdateForm
-        schema={customersSchema}
+        schema={storesSchema}
         initialData={{
-          customer_id: "",
-          first_name: "",
-          last_name: "",
-          email: "",
+          store_id: "",
+          name: "",
+          street: "",
+          city: "",
+          state: "",
+          zip_code: "",
           phone_number: "",
-          registration_date: "",
+          employee_count: "",
         }}
         rows={rows}
         getData={getData}
@@ -92,4 +98,4 @@ const Customers = () => {
     </div>
   );
 };
-export default Customers;
+export default Stores;

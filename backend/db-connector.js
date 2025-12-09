@@ -1,4 +1,4 @@
-const dotenv = require("dotenv");
+const dotenv = require("dotenv").config();
 const mysql = require("mysql2");
 
 const pool = mysql

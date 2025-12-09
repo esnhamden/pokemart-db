@@ -1,4 +1,4 @@
-const dotenv = require("dotenv");
+const dotenv = require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
@@ -8,6 +8,12 @@ app.use(cors({ credentials: true, origin: "*" }));
 app.use(express.json());
 
 app.use("/customers", require("./routes/customers"));
+app.use("/discountcodes", require("./routes/discountcodes"));
+app.use("/products", require("./routes/products"));
+app.use("/sales", require("./routes/sales"));
+app.use("/stores", require("./routes/stores"));
+app.use("/salesproducts", require("./routes/salesproducts"));
+app.use("/storesproducts", require("./routes/storesproducts"));
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);

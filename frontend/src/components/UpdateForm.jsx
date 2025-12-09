@@ -1,9 +1,7 @@
 import { useState } from "react";
 
-const UpdateForm = ({ schema, initialData, rows, getData }) => {
+const UpdateForm = ({ schema, initialData, rows, getData, endpoint }) => {
   const [data, setData] = useState(initialData);
-
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/customers`;
 
   // TODO: Change Object.values(row)[0] == id
   const handleIDChange = (e) => {

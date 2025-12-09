@@ -1,9 +1,7 @@
 import { useState } from "react";
 
-const CreateForm = ({ schema, initialData, getData }) => {
+const CreateForm = ({ schema, initialData, getData, endpoint }) => {
   const [data, setData] = useState(initialData);
-
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/customers`;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
