@@ -45,7 +45,7 @@ const customersSchema = [
 const Customers = () => {
   const [rows, setRows] = useState([]);
 
-  const endpoint = `${import.meta.env.VITE_BACKEND_URL}/customers`;
+  const endpoint = `http://classwork.engr.oregonstate.edu:62812/customers`;
 
   const getData = async () => {
     try {
